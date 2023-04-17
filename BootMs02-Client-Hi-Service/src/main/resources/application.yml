@@ -4,6 +4,7 @@ server:
 spring:
   application:
     name: Hi-Service
+    
 
 #Manual registration of client (if eureka server is not running on 8761 port no)
 #eureka:
