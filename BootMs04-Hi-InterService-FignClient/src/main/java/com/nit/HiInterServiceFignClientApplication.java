@@ -13,5 +13,4 @@ public class HiInterServiceFignClientApplication {
 	public static void main(String[] args) {
 		SpringApplication.run( HiInterServiceFignClientApplication.class, args);
 	}
-
 }
