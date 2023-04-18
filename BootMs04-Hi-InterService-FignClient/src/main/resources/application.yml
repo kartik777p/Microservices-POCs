@@ -1,0 +1,13 @@
+server:
+  port: 2222
+  
+spring:
+  application:
+    name: Hi-Service-InterService-Communication
+    
+
+#Manual registration of client (if eureka server is not running on 8761 port no)
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: ${DISCOVERY_URL:http://localhost:8787}/eureka/
