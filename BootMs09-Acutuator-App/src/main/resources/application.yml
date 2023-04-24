@@ -17,6 +17,13 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,beans
+        include: health,info,beans,shutdown
+        
+        
         # not want to participate in actuator
        # exclude: mappings
+#must be include all endpoint or (shutdown) then only it works
+#shutdown must be called with post req
+  endpoint:
+    shutdown:
+      enabled: true
