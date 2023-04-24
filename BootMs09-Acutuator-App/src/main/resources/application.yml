@@ -1,0 +1,22 @@
+server:
+  port: 8084
+  
+#by default one actuator is exposed
+#http://localhost:8084/actuator/health
+
+#for all endpoint exspose
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+
+
+#expose endpoint which you want to use
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,beans
+        # not want to participate in actuator
+       # exclude: mappings
