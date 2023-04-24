@@ -9,7 +9,8 @@ public class StockUIServiceImpl implements IStockUIService {
 	@Override
 	public String fetchTotalPrice(String companyName,int quantity) {
 	//prepare endpoint having res service url
-		String END_POINT="http://localhost:4444/stockPriceCalc/{companyName}/{quantity}";
+		//withOUT API GATEWAY
+		String END_POINT="http://localhost:4444/calc/calculate/{companyName}/{quantity}";
 		//declare variable at the top for method scope
 		String response=null;
 		//create webClient obj

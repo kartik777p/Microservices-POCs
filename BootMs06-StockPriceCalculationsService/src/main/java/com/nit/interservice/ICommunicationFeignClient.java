@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "Stock-PriceService" /*,url = "http://localhost:3333" */)
 public interface ICommunicationFeignClient {
  
-	@GetMapping("/stockPrice/{companyName}")
+	@GetMapping("/price/stockPrice/{companyName}")
 	public ResponseEntity<Double>  fetchStockPriceBasedOnCompanyName(@PathVariable("companyName")String companyName);
 	
 }

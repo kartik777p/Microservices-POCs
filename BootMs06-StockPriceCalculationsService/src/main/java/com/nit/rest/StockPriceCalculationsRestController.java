@@ -5,18 +5,19 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nit.exception.CompanyNotFoundException;
 import com.nit.interservice.ICommunicationFeignClient;
 
 @RestController
+@RequestMapping("/calc")
 public class StockPriceCalculationsRestController {
 
 	@Autowired
 	private ICommunicationFeignClient feignClient;
 
-	@GetMapping("stockPriceCalc/{companyName}/{quantity}")
+	@GetMapping("calculate/{companyName}/{quantity}")
 	public ResponseEntity<?> calcAmtOfTheStocks(@PathVariable("companyName") String companyName,
 			                                                                                @PathVariable("quantity") int quantity){
 		ResponseEntity<?> resEntity=null;
