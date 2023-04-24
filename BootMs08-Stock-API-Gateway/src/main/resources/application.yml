@@ -1,0 +1,19 @@
+server:
+  port: 8083
+  
+spring:
+  application:
+    name: STOCK-APP-GATEWAY
+    
+  cloud:
+    gateway:
+      routes:
+      - id: STOCK-PRICE-SERVICE
+        uri: lb://STOCK-PRICESERVICE
+        predicates:
+        - Path=/price/**
+
+      - id: STOCK-CALCULATION-SERVICE
+        uri: lb://STOCK-CALCULATION-SERVICE
+        predicates:
+        - Path=/calc/**
