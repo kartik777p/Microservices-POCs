@@ -1,0 +1,19 @@
+server:
+  port: 8087
+  
+spring:
+  application:
+    name: YML-APPLICATION
+    
+#to avoid hardcode in java file
+#here also problem if 20+ variable is there in class
+#demo:
+#  welcomeMsg: Hello Boss, How are you..!!
+#  greetMsg: Good Morning
+
+#To solve  this issue we will use map (key-Value pair)
+#welcomeMsg(key)--->Hello Boss, How are you..!!(Value)
+demo:
+  properties:
+     welcomeMsg: Hello , How are you..!!
+     greetMsg: Good Morning
