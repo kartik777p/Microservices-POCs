@@ -1,0 +1,18 @@
+server:
+  port: 8087
+  
+spring:
+  application:
+    name: Admin-Client-2
+    
+  boot:
+    admin:
+      client:
+        url: http://localhost:8085/
+        
+#Configure acuator endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

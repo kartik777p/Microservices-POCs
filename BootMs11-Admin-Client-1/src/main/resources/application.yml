@@ -1,0 +1,21 @@
+#configure server port No
+server:
+  port: 8086
+  
+  
+# we have to configure client manually with admin server
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8085/        #on which admin server is running
+  #configure name for Admin client
+  application:
+    name: Admin-Client-1
+
+#Configure acuator endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
