@@ -1,0 +1,3 @@
+#port number on which Admin is running
+server:
+  port: 8085
