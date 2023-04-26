@@ -1,0 +1,31 @@
+server:
+  port: 8089
+
+
+#git repo location where  server config is stored
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kartik777p/Config-Properties.git
+#verify any repo issue in service startup
+          clone-on-start: true   #when app started clone the git repo
+          
+          
+#display security of mgmt endpoint
+#management:
+#  endpoint:
+#    serviceregistry:
+#      enabled: false
+
+
+#check server configuration without client by admin
+# SYNATX:-http://localhost:8089/<server-config-File-Name>/<profile> 
+#http://localhost:8089/client-config/deafult
+
+          #default-label: main
+          #default-label: main
+
+
+

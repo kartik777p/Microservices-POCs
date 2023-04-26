@@ -5,6 +5,7 @@ spring:
   application:
     name: STOCK-APP-GATEWAY
     
+ #routes configurations for services
   cloud:
     gateway:
       routes:
