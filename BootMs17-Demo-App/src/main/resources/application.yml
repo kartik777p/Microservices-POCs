@@ -1,0 +1,8 @@
+#permonent if we run this application as Spring boot application
+#server:
+#  port: 9012
+  
+# if you go with run  configurations we can execute this application with multiple port number 
+# by sending VM argument as a input
+# Syntax:-    -Dserver.port=<port-No>
+# Example :-  -Dserver.port=9011
