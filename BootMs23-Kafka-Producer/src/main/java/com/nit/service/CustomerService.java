@@ -31,11 +31,5 @@ public class CustomerService {
 		return "Customer records added to kafka Queue Sucessfully...";
 	}//addCustomerToKafka
 	
-	/*
-	@KafkaListener(topics = KafkaConstants.TOPIC, groupId = KafkaConstants.GROUP_ID)
-	public Customer listener(Customer c) {
-		System.out.println("***Msg recieved from Kafka Topic ::" + c);
-		return c;
-	}  */
 	
 }

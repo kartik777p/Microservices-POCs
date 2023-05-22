@@ -1,29 +1,10 @@
 package com.nit.model;
-/*
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class Customer {
-	
-	private Integer customerId;
-	private String customerName;
-	private String customerEmail;
-} */
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * This class serving as model to hold data
  * @author KP-Kartik
  *
  */
-@XmlRootElement(name = "customer")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Customer {
 
 	private Integer customerId;
