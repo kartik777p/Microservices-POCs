@@ -1,0 +1,8 @@
+Limitations of proxy based mocking (Easy Mock)
+1) we can not perform testing on static method of target class
+2) we can not perform testing on private method of target class
+3) we can not perform testing on final method of target class
+4) we can not test final classes
+NOTE :-
+   To solve all this problem it is recomanded to use Power MOCK
+   (byte code manipulation based  mocking)
